@@ -8,14 +8,14 @@ class Cliente {//class principal
     var cpf_cliente: String ="123.456.789-12"
     private set //assim so pode ser inserido valor na variavel dentro da classe isso impede que essa variavel seja alterada em outro lugar do codigo
 
+    constructor()
+
+    fun clienteinfo() = "$nome_cliente e $cpf_cliente"
 }
 
 
 fun main(){
     val cliente = Cliente()//referenciando o objeto, na variavel cliente
-
-    println(cliente.nome_cliente)
-    println(cliente.cpf_cliente)
-
+    println(cliente.clienteinfo())//usando uma funcao dentro de uma class pra retornar algo processado
 
 }
