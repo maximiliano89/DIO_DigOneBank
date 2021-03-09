@@ -4,11 +4,9 @@ package one.digitalinnovation.espelho.max
 //criando o objeto
 class Cliente {//class principal
     var nome_cliente: String = "Max"
+    //private var nome_cliente: String = "Max" se for feito dessa maneira, só é possivel interagir coma variavel dentro da classe cliente
     var cpf_cliente: String ="123.456.789-12"
-
-    inner class Endereco(){//class secundaria, somente acessivel via objeto Cliente
-        var rua : String = "Rua Logo Ali"
-    }
+    private set //assim so pode ser inserido valor na variavel dentro da classe isso impede que essa variavel seja alterada em outro lugar do codigo
 
 }
 
@@ -19,5 +17,5 @@ fun main(){
     println(cliente.nome_cliente)
     println(cliente.cpf_cliente)
 
-    println(cliente.Endereco().rua)
+
 }
