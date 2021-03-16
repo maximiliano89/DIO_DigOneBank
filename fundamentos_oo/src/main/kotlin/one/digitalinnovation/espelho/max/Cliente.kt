@@ -2,8 +2,8 @@
 package one.digitalinnovation.espelho.max
 
 //criando o objeto
-open class Cliente (
-    open val nome : String,
-    open val cpf : String
+abstract class Cliente (
+     val nome : String,
+     val cpf : String
 )
 
