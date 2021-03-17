@@ -6,7 +6,14 @@ import java.math.BigDecimal
 abstract class Analista(
      nome : String,
      cpf: String,
-    val salario : BigDecimal
+    val salario : Double
 ) : Cliente(nome , cpf) {
-    abstract fun  calculoAuxilio()
+    protected abstract fun  calculoAuxilio(): Double
+
+    override fun toString(): String = """
+        Nome: $nome
+        Cpf: $cpf
+        salario: $salario
+        Auxilio: ${calculoAuxilio()}
+    """.trimIndent()
 }

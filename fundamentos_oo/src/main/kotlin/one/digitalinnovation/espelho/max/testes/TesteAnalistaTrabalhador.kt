@@ -1,8 +1,6 @@
 package one.digitalinnovation.espelho.max.testes
 
-import one.digitalinnovation.espelho.max.Analista
-import one.digitalinnovation.espelho.max.Cliente
-import java.math.BigDecimal
+import one.digitalinnovation.espelho.max.Trabalhador
 
 /*
 fun main(){
@@ -17,3 +15,9 @@ fun main(){
     println("${time.nome} ,${time.cpf} com salario de ${time.salario}" )
 }
 */
+
+fun main(){
+    val max = Trabalhador(nome = "Maximiliano", cpf = "1234567891", salario = 2000.00)
+    ImprimeRelatorioAnalista.imprime(max)
+}
+
